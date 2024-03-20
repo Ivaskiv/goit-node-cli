@@ -1,4 +1,3 @@
-//index.js
 const { program } = require("commander");
 const { listContacts, getContactById, removeContact, addContact } = require('./contacts');
 program
