@@ -9,7 +9,6 @@ async function listContacts() {
     await ensureFileExists(contactsPath); 
 // Зчитуємо дані з файлу контактів
     const data = await fs.readFile(contactsPath, 'utf8');
-// Парсимо дані (тобто перетв. рядка, який містить дані у форматі JSON, на об'єкт JavaScript) у форматі JSON для отримання масиву контактів
     const contacts = JSON.parse(data);
     return contacts
   } catch (error) {
