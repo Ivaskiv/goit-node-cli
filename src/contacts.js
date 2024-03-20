@@ -2,7 +2,7 @@
 const path = require('path');
 const fs = require('fs').promises;
 const contactsPath = path.join(__dirname, 'db', 'contacts.json');
-//призначена для отримання списку контактів з файлу contacts.json
+//для отримання списку контактів з файлу contacts.json
 async function listContacts() {
   try {
 // Перевірка існування файлу
